@@ -1,0 +1,153 @@
+[1mdiff --git a/222.html b/222.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..aaf52ee[m
+[1m--- /dev/null[m
+[1m+++ b/222.html[m
+[36m@@ -0,0 +1,47 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<style>[m
+[32m+[m[32m    div{[m
+[32m+[m[32m        width: 100px;[m
+[32m+[m[32m    }[m
+[32m+[m[32m</style>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <div>哈哈哈</div>[m
+[32m+[m[32m<script>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[41m            [m
+[32m+[m
+[32m+[m
+[32m+[m[41m        [m
+[32m+[m
+[32m+[m[41m        [m
+[32m+[m[41m        [m
+[32m+[m
+[32m+[m
+[32m+[m[41m            [m
+[32m+[m[41m        [m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    */[m
+[32m+[m[32m   let str = '123x21';[m
+[32m+[m
+[32m+[m[32m//    console.log(str.slice(2,4));[m
+[32m+[m[32m// console.log(str.slice(-3,-1));[m
+[32m+[m[32m//    console.log(str.substring(2,5));[m
+[32m+[m[32m// console.log(str.substring(3));[m
+[32m+[m[32m// console.log(str.substring(5,2));[m
+[32m+[m[32m// console.log(str.substring(0,2));[m
+[32m+[m[32m//    console.log(str[3]);[m
+[32m+[m[32m    // console.log(str.charAt(3));  //IE6下可以使用[m
+[32m+[m[32m</script>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/333.html b/333.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cddced6[m
+[1m--- /dev/null[m
+[1m+++ b/333.html[m
+[36m@@ -0,0 +1,92 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m    /*[m
+[32m+[m[32m        1.截取字符串的方法有哪些？[m
+[32m+[m[32m            substring[m
+[32m+[m[32m            substr(0,截取几个)[m
+[32m+[m[32m            slice[m
+[32m+[m
+[32m+[m[41m        [m
+[32m+[m[32m        2.转换大小写[m
+[32m+[m[32m            toUpperCase() 大写[m
+[32m+[m[32m            toLowerCase() 小写[m
+[32m+[m
+[32m+[m[32m        3.字符串切割为数组的方法[m
+[32m+[m[32m            split 字符串的方法[m
+[32m+[m[32m            join 数组的方法[m
+[32m+[m
+[32m+[m[32m        4.数组中替换，增加，删除的方法[m
+[32m+[m[32m        splice[m
+[32m+[m
+[32m+[m[32m        5.数组过滤[m
+[32m+[m[32m            把条件符合的数据，存到新的数组中，[m
+[32m+[m[32m            就等同于，把条件不成立给过滤掉[m
+[32m+[m[32m            arr.filter(function(item,i){[m
+[32m+[m[32m                return 成立的布尔值[m
+[32m+[m[32m            })[m
+[32m+[m[41m        [m
+[32m+[m[32m        6.数组排序[m
+[32m+[m[32m            arr.sort(function(a,b){[m
+[32m+[m[32m                return 一定是返回一个数字[m
+[32m+[m[32m            })[m
+[32m+[m
+[32m+[m[32m        7.[m
+[32m+[m[32m            map -> 返回一个新数组，长度跟原始数组一样[m
+[32m+[m[32m            filter -> 过滤[m
+[32m+[m[32m            forEach -> 循环[m
+[32m+[m[32m            some -> 返回一个布尔值，只要有一个条件成立就true，否则就false[m
+[32m+[m[32m            every -> 这个数组中的每项都得符合指定条件才会为true，否则就为false[m
+[32m+[m[32m            sort -> 排序[m
+[32m+[m[41m        [m
+[32m+[m[32m        10.[m
+[32m+[m[32m            创建:[m
+[32m+[m[32m                document.createElement('ele')[m
+[32m+[m[32m            添加:[m
+[32m+[m[32m                后:[m
+[32m+[m[32m                    parent.appendChild(child)[m
+[32m+[m
+[32m+[m[32m                前:[m
+[32m+[m[32m                    parent.insertBefore(新的,老的);[m
+[32m+[m
+[32m+[m[32m            删除:[m
+[32m+[m[32m                parent.removeChild(child)[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[41m            [m
+[32m+[m
+[32m+[m
+[32m+[m[41m        [m
+[32m+[m
+[32m+[m[41m        [m
+[32m+[m[41m        [m
+[32m+[m
+[32m+[m
+[32m+[m[41m            [m
+[32m+[m[41m        [m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    */[m
+[32m+[m[32m   let str = '123x21';[m
+[32m+[m
+[32m+[m[32m//    console.log(str.slice(2,4));[m
+[32m+[m[32m// console.log(str.slice(-3,-1));[m
+[32m+[m[32m//    console.log(str.substring(2,5));[m
+[32m+[m[32m// console.log(str.substring(3));[m
+[32m+[m[32m// console.log(str.substring(5,2));[m
+[32m+[m[32m// console.log(str.substring(0,2));[m
+[32m+[m[32m//    console.log(str[3]);[m
+[32m+[m[32m    // console.log(str.charAt(3));  //IE6下可以使用[m
+[32m+[m[32m</script>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
